@@ -7,6 +7,7 @@ int main ()
 	scanf ("%d", &A);
 	printf ("Digite o seu segundo numero:");
 	scanf ("%d", &B);
+do{
 
 	printf ("[1] soma \n");
 	printf ("[2] subtracao \n");
@@ -14,12 +15,12 @@ int main ()
 	printf ("[4] divisao \n");
 	scanf ("%d", &operacao);
 	
-	while (operacao>4)      
-	{printf ("opcao invalida");
-	}   
+
 	
-	switch (operacao)
-	{case 1:
+	switch (operacao){
+	
+	
+	  case 1:
 		conta = A+ B; 
 		printf ("O resultado da sua soma e %d\n", conta);
 		break;
@@ -40,7 +41,13 @@ int main ()
 		    	break;
 		    	
 				}
-	
+    
+    
+		}while (operacao<1 || operacao>4);      
+	 printf ("opcao invalida");
 
-	return 0;		
+
+
+	return 0;
+
 }
